@@ -515,7 +515,7 @@ ul {
     border-color: var(--blue-text-color);
 }
 
-/* Footer */
+/* Футер */
 
 .footer {
     padding-top: 60px;
@@ -539,6 +539,8 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
+/* Адреса і контакти у футері */
 
 .address {
     margin-bottom: 12px;
@@ -572,6 +574,8 @@ ul {
 .tel-footer:focus {
     color: var(--blue-text-color);
 }
+
+/* Соц. мережі футер */
 
 .footer-soc {
     margin-left: 93px;
@@ -625,6 +629,25 @@ ul {
 
 .item-footer-icon + .item-footer-icon {
     margin-left: 10px;
+}
+
+/* Розсилка */
+
+.footer-newsletter {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-newsletter-title {
+    margin-bottom: 20px;
+    
+    color: var(--primary-bg-color);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 /* List of buttons on Portfolio */
