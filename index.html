@@ -392,12 +392,15 @@
                 </ul>
             </div>
             <div class="footer-newsletter">
-                <form>
-                    <p class="footer-newsletter-title">Підпишіться на розсилку</p>
-                    <label>
-                        <input type="email" name="" id="" placeholder="E-mail">
-                    </label>
-                    <button type="submit">Підписатися</button>
+                <p class="footer-subscribe">Підпишіться на розсилку</p>
+                <form class="footer-form">
+                    <input type="email" class="subscribe-input" name="subscribe" placeholder="E-mail">
+                    <button type="submit" class="subscribe-btn">
+                        Підписатися
+                        <svg class="icon-subscribe" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -445,13 +448,12 @@
                     <span class="form-label">Коментар</span>
                     <textarea name="coment"
                         class="form-textarea"
-                        rows="5" 
                         placeholder="Введіть текст">
                     </textarea>
                 </label>
-                <label class="form-field--terms">
-                    <input type="checkbox" class="form-input" name="check">
-                    <span class="form-terms">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+                <label class="form-field checkbox">
+                    <input type="checkbox" class="form-checkbox" name="checkbox">
+                    <p class="form-terms">Погоджуюся з розсилкою та приймаю <a href="#" class="form-contract">Умови договору</a></p>
                 </label>
                 <button type="submit" class="form-btn">Відправити</button>
             </form>
