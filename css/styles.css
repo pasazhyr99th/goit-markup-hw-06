@@ -116,6 +116,12 @@ ul {
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover {
+    color: var(--blue-text-color);
 }
 
 .x-close {
@@ -144,31 +150,109 @@ ul {
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-bottom: 10px;
+    font-size: inherit;
+}
 
-    color: var(--icons-noactive-color);
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--contacts-header-color);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
 
-input {
-    margin: 0;
-    margin-top: 4px;
+.form-input {
+    position: relative;
+    width: 100%;
     padding: 12px 12px 12px 42px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
 
-.form-field textarea {
+.thumb {
+    position: relative;
+}
+
+.thumb:focus-within > .form-icon {
+    color: var(--blue-text-color);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
     resize: none;
+    width: 100%;
     padding: 12px 16px;
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.form-terms {
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 30px;
+
+    color: var(--contacts-header-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.form-btn {
+    display: block;
+    padding: 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    font-family: 'Roboto';
+    color: var(--primary-bg-color);
+    background-color: var(--blue-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover, 
+.form-btn:focus {
+    background-color: var(--button-focus-color);
 }
 
 .main-nav {
