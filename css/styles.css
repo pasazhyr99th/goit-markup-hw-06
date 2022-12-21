@@ -187,7 +187,8 @@ ul {
 .thumb:focus-within > .form-icon,
 .thumb:hover > .form-icon,
 .thumb:hover > .form-input,
-.form-textarea:hover { 
+.form-textarea:hover,
+.thumb:focus > .form-input { 
     color: var(--blue-text-color);
     border-color: var(--blue-text-color);
 }
