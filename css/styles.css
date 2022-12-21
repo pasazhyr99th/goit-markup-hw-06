@@ -176,15 +176,18 @@ ul {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb {
     position: relative;
 }
 
-.thumb:focus-within > .form-icon, 
-.form-input:hover,
-.form-textarea:hover {
+.thumb:focus-within > .form-icon,
+.thumb:hover > .form-icon,
+.thumb:hover > .form-input,
+.form-textarea:hover { 
     color: var(--blue-text-color);
     border-color: var(--blue-text-color);
 }
@@ -211,13 +214,19 @@ ul {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+}
+
+.form-checkbox,
+.form-input,
+.form-textarea {
+    appearance: none;
+    /* position: absolute; */
 }
 
 .checkbox {
@@ -225,6 +234,16 @@ ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+}
+
+.form-checkbox:checked + .checkbox-icon {
 }
 
 .form-terms {
