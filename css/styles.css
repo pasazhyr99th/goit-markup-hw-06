@@ -185,19 +185,6 @@ ul {
     position: relative;
 }
 
-.thumb:focus-within > .form-icon,
-.thumb:hover > .form-icon { 
-    color: var(--blue-text-color);
-   
-}
-
-.form-input:hover,
-.form-textarea:hover,
-.form-input:focus,
-.form-textarea:focus {
-    border-color: var(--blue-text-color);
-}
-
 .form-icon {
     position: absolute;
     top: 50%;
@@ -250,7 +237,6 @@ ul {
     align-items: center;
     margin-bottom: 30px;
 }
-
 
 .checkbox-icon {
     display: inline-block;
@@ -306,6 +292,18 @@ ul {
 .form-btn:hover, 
 .form-btn:focus {
     background-color: var(--button-focus-color);
+}
+
+.thumb:focus-within > .form-icon,
+.thumb:hover > .form-icon {
+    color: var(--blue-text-color);
+}
+
+.form-input:hover,
+.form-textarea:hover,
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--blue-text-color);
 }
 
 .main-nav {
