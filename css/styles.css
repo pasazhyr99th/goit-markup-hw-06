@@ -251,7 +251,7 @@ ul {
     border-color: var(--blue-text-color);
     background-color: var(--blue-text-color);
     background-image: url('../images/icons/check.svg');
-    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
 }
