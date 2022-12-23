@@ -240,7 +240,7 @@ ul {
 
 .checkbox-icon {
     display: inline-block;
-    width: 16px;
+    width: 15px;
     height: 15px;
 
     border: 2px solid var(--primary-text-color);
@@ -248,8 +248,12 @@ ul {
 }
 
 .form-checkbox:checked + .checkbox-icon {
+    border-color: var(--blue-text-color);
     background-color: var(--blue-text-color);
-    background-image: url('../images/');
+    background-image: url('../images/icons/check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
 }
 
 .form-terms {
